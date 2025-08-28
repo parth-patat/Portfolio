@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Patat - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Gradient -->
+    <div class="bg-gradient"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <!-- Desktop Navigation -->
+            <div class="nav-desktop">
+
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile">
+                <div class="nav-mobile-header">
+                    <div class="nav-logo">Portfolio</div>
+                    <button class="nav-toggle" id="navToggle">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+                <div class="nav-mobile-menu" id="navMobileMenu">
+                    <ul class="nav-mobile-list">
+                        <li><a href="#about" class="nav-mobile-link">About</a></li>
+                        <li><a href="#skills" class="nav-mobile-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-mobile-link">Projects</a></li>
+                        <li><a href="#experience" class="nav-mobile-link">Experience</a></li>
+                        <li><a href="#contact" class="nav-mobile-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Content -->
+                <div class="hero-text">
+                    <div class="hero-intro">
+                        <p class="hero-greeting">Hello, I'm</p>
+                        <h1 class="hero-name">Parth Patat</h1>
+                        <h2 class="hero-title">Software Engineer | Full Stack Developer</h2>
+                    </div>
+                    
+                    <p class="hero-description">
+                        "Bringing order to chaos by designing scalable solutions one algorithm at a time; beacuse apparently puzzle-solving is a career."
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <!--<button class="btn btn-primary" id="viewWorkBtn">View My Work</button>-->
+                        <a class="btn btn-primary" href="https://drive.google.com/file/d/16OXfxAuTtweGi1Zp9Z0PPWb_NSrCgsus/view?usp=drive_link" target="_blank">Resume</a>
+                        <a class="btn btn-secondary" href="https://linkedin.com/in/parth-patat" target="_blank">Linkedin</a>
+                        <!--<button class="btn btn-secondary" id="getInTouchBtn">Get In Touch</button>-->
+                    </div>
+                    
+                    <!-- <div class="hero-social">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15,3 21,3 21,9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div> -->
+                </div>
+                
+                <!-- Right Content - Profile Image -->
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-border">
+                            <div class="profile-bg">
+                                <img src="Assets/parth.JPG" class="profile-image">
+                            </div>
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description" style="margin-top: 1rem;">
+                    I like to think of myself as someone who enjoys solving puzzles, only mine usually come wrapped in code.
+                    <br><br>With a Master’s in Information Technology from Arizona State University and a Computer Engineering degree from Gujarat Technological University, I’ve built a solid foundation to keep feeding my curiosity for software engineering. 
+                    <br><br>My work so far has taken me through a mix of startups and tech teams, where I have built everything from event-driven backends to full-stack applications that actually scale. I have seen what it takes to make systems reliable under pressure, keep databases efficient, and turn abstract ideas into working software.
+                    <br><br>The activity I have spent most time on, and enjoyed the most, is brainstorming real-world technical problems and coding my way toward solutions. Whether it is designing an application from scratch or optimizing one to run smoother, I love the process of tinkering, testing, and finally watching things click into place.
+                    <br><br>At heart, I am a problem solver who happens to use software as my toolkit, always looking for the next challenge to turn into code.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-description">
+                    Programming Languages
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />Java</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />C++</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />C#</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />SQL</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />Python</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />JavaScript</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />TypeScript</div>
+                </div>
+                <p class="section-description" style="margin-top: 35px;">
+                    Frameworks & Libraries
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />SpringBoot</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg" />Hibernate</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />jQuery</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />ReactJs</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />AngularJs</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />NodeJs</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />ExpressJs</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />NextJs</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" />Kafka</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" />GraphQL</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />Pandas</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />NumPy</div>
+                </div>
+                <p class="section-description" style="margin-top: 35px;">
+                    Databases
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />PostgreSQL</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />MySQL</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />MongoDB</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg" />Hadoop</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" />Oracle</div>
+                </div>
+                <p class="section-description" style="margin-top: 35px;">
+                    Developer Tools
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"/></div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />Linux</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />Docker</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" />Kubernetes</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" />Jenkins</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />Git</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />GitHub</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />Postman</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-original.svg" />SonarQube</div>
+                    <div class="skill-card"><img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" />JIRA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-content projects-content">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Assets/apid1.png" alt="API Directory">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="https://github.com/parth-patat/api_directory" target="_blank" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/parth-patat/api_directory" target="_blank" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">API Directory Web App</h3>
+                            <p class="project-description">
+                                An API explorer consisting 1K+ open-source API references with dynamic search, filters, pagination, query indexing, secure CRUD operations, JWT-based authentication, RBAC and structured admin APIs to manage users and entries.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">J2EE</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Assets/f1.png" alt="Mobile Banking App">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="https://public.tableau.com/app/profile/prit.thakkar7610/viz/DVProjectF1/Dashboard" target="_blank" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://public.tableau.com/app/profile/prit.thakkar7610/viz/DVProjectF1/Dashboard" target="_blank" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Formula 1 Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Interactive dashboard featuring filters, team/driver comparisons, strategic insights, track trends, performance shifts, and pit timing patterns from cleaned, indexed datasets. Intended for race enthusiats and sports analysts.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Assets/quiz.png">
+                            <div class="project-overlay"></div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Learning Quiz Platform</h3>
+                            <p class="project-description">
+                                A quiz platform with secured login, timed MCQs, topic-based filtering, modular APIs for scoring, stats, and admin actions, included live score tracking, question randomization, and leaderboard visualizations and RBAC.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">NodeJs</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-role">Software Engineer</h3>
+                        <h4 class="experience-company">Software Architech Inc.</h4>
+                        <p class="experience-period">August 2024 - Present</p>
+                        <ul class="bullets experience-period">
+                            <li>Developed event-driven microservices for payments using Java, Spring Boot, Kafka, React, and Kubernetes.</li>
+                            <li>Improved backend performance with Redis caching, Spring Data JPA, and PostgreSQL query optimization.</li>
+                            <li>Built observability dashboards with Prometheus, Grafana, ELK, and integrated alerting with OpenObserve.</li>
+                            <li>Automated CI/CD pipelines with Jenkins, GitHub Actions, SonarQube, Docker, and TDD practices.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-role">Software Developer</h3>
+                        <p class="experience-company">Axisray</p>
+                        <p class="experience-period">January 2022 - May 2022</p>
+                        <ul class="bullets experience-period">
+                            <li>Led a 3-member team to build a product usage analytics module with Spring Boot, React, and PostgreSQL.</li>
+                            <li>Developed RESTful APIs for asset management workflows with Spring Boot and PostgreSQL.</li>
+                            <li>Implemented automated asset backup and versioning using AWS S3 lifecycle policies and Lambda triggers.</li>
+                            <li>Built scheduled batch jobs with AWS Lambda and IAM roles to sync external billing APIs.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-role">Full Stack Software Development Intern</h3>
+                        <p class="experience-company">SculpTech</p>
+                        <p class="experience-period">August 2020 - June 2021</p>
+                        <ul class="bullets experience-period">
+                            <li>Built modular front-end components with ReactJS, Bootstrap, and jQuery for enterprise web apps.</li>
+                            <li>Designed backend APIs with Node.js, Express.js, and MVC routing for cleaner service logic.</li>
+                            <li>Integrated MongoDB with RESTful APIs and form workflows to enable real-time updates.</li>
+                            <li>Developed an internal task-tracking tool using React, Node.js, and MongoDB for team collaboration.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+  <div class="container">
+    <div class="section-content">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-timeline">
+        <div class="edu-line"></div>
+
+        <!-- Masters -->
+        <div class="edu-entry edu-right">
+          <p class="edu-date">August 2022 – May 2024</p>
+          <p class="edu-degree">Master of Science in Information Technology</p>
+          <p class="edu-university">Arizona State University</p>
+          <p class="edu-location">(Tempe, Arizona, USA)</p>
+        </div>
+
+        <!-- Bachelors -->
+        <div class="edu-entry edu-left">
+          <p class="edu-date">June 2018 – May 2022</p>
+          <p class="edu-degree">Bachelor of Engineering in Computer Engineering</p>
+          <p class="edu-university">Gujarat Technological University</p>
+          <p class="edu-location">(Ahmedabad, Gujarat, India)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Let's get in touch</h2>
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">parthp140101@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-label">Phone</p>
+                        <p class="contact-value">+1 (602)-582-5859</p>
+                    </div>
+                    <div class="contact-item">
+                        <p class="contact-label">Linkedin</p>
+                        <p class="contact-value">linkedin.com/in/parth-patat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
